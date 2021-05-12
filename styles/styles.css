@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+body {
+  color: aliceblue;
+  text-align: center;
+  margin-top: 0;
+  /*background-color: #404048;*/
+}
+
+#main-carousel {
+  height: 540px;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.intro {
+  background-image: url(/images/skyline-moresky.png);
+  background-size: cover;
+  height: 768px;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar-darker {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+
+
+
+
+
+
+
