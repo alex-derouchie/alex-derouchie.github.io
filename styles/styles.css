@@ -7,6 +7,10 @@ body {
   /*background-color: #404048;*/
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #main-carousel {
   height: 540px;
 }
@@ -38,12 +42,41 @@ body {
 }
 
 .card {
-  width: 400px;
   height: 400px;
+  width: 400px;
+  justify-content: center;
+  border-width: 0.15em;
+}
+
+.lead {
+  color: lightgray;
+  font-size: 1.25rem;
+}
+
+.card:hover {
+  border-width: 0.25em;
+  border-color: darkgray;
 }
 
 .padding-lg {
   padding-top: 300px;
+}
+
+.email-link {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: white;
+}
+
+.contact-container {
+  justify-content: left;
+}
+
+.bi {
+  font-size: 1.25rem;
 }
 
 
