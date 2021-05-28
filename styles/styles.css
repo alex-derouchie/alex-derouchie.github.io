@@ -46,6 +46,14 @@ html {
   width: 400px;
   justify-content: center;
   border-width: 0.15em;
+  position: relative;
+}
+
+.card-link {
+  position: absolute;
+  width: 80px;
+  bottom:5%;
+  left:160px;
 }
 
 .lead {
@@ -54,7 +62,7 @@ html {
 }
 
 .card:hover {
-  border-width: 0.25em;
+  border-width: 0.15em;
   border-color: darkgray;
 }
 
@@ -75,9 +83,42 @@ html {
   justify-content: left;
 }
 
-.bi {
+.bi { /* Bigger Bootstrap Icons */
   font-size: 1.25rem;
 }
+
+/* This needs some work. */
+.section-header {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: 200;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.resume-tagline {
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.uni-container {
+  text-align: left;
+}
+
+.text-left {
+  text-align: left;
+}
+
+
+
 
 
 
