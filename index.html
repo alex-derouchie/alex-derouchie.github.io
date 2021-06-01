@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Derouchie</title>
 
-
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
@@ -18,14 +17,10 @@
 </head>
 
 <!-- TODO:
-    -Animate some more text
-    -Finish populating "More" text in cards
     -fix header fonts
     -footer?
     -Comments?
-    -clean up images (Add more for blanks)
     -Derand Card? idk
-    -responsiveness
     -deploy & get feedback
 -->
 
@@ -35,13 +30,15 @@
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
             <div class="container">
                 <a href="#" class="navbar-brand">Alex Derouchie</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <button class="navbar-toggler" type="button" onclick="handleNavBackground()" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle Navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="mx-auto"></div>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
                             <a href="#Home" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
@@ -66,13 +63,14 @@
             <h1 class="centered display-1">
                 <span id="intro-hi">Hi. </span><span id="intro-name">I'm Alex.</span>
             </h1>
+            <i class="bi bi-chevron-down pulse"></i>
         </div>
     </div>
 
     <!---------- Main Content ---------->
-    <main class="row">
+    <main class="container">
 
-        <div class="col-md-8 col-centered">
+        <div class="col-lg-12 col-centered">
 
             <hr>
             <div class="my-5">
@@ -110,51 +108,56 @@
             <div class="my-5">
                 <h1 class="section-header">Resume</h1>
                 <p class="resume-tagline">Work Experience</p>
-                <div class=" card-deck row my-5">
+                <div class="row my-5">
                     <!-- <a data-toggle="collapse" href="#drop-agnovi" aria-expanded="false" aria-controls="drop-agnovi"
                         id="agnovi-card"> -->
-                    <div class="card bg-dark text-white justify-content-center mx-3">
-                        <img class="card-img" src="/images/agnovi-dark.png" alt="Card image">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Agnovi Corporation</h5>
-                            <p class="card-text">Junior Software Developer, Aug. 2020 - Present</p>
-                            <div id="drop-agnovi" class="collapse">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>
-                                            Designed and implemented UI components in Java using the Eclipse SWT
-                                            library.
-                                        </li>
-                                        <li>Created backend functions and procedures to interface between the UI and the
-                                            database.</li>
-                                        <li>Created database queries and procedures in SQL to satisfy customer
-                                            requirements.</li>
-                                    </ul>
+                    <div class="col-lg">
+                        <div class="card col-lg bg-dark text-white my-3">
+                            <img class="card-img" src="/images/agnovi-dark.png" alt="Card image">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Agnovi Corporation</h5>
+                                <p class="card-text">Junior Software Developer, Aug. 2020 - Present</p>
+                                <div id="drop-agnovi" class="collapse">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>
+                                                Designed and implemented UI components in Java using the Eclipse SWT
+                                                library.
+                                            </li>
+                                            <li>Created backend functions and procedures to interface between the UI and
+                                                the
+                                                database.</li>
+                                            <li>Created database queries and procedures in SQL to satisfy customer
+                                                requirements.</li>
+                                        </ul>
+                                    </div>
                                 </div>
+                                <a href="#drop-agnovi" class="btn btn-outline-light card-link" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="drop-agnovi">More</a>
                             </div>
-                            <a href="#drop-agnovi" class="btn btn-outline-light card-link" data-bs-toggle="collapse"
-                                role="button" aria-expanded="false" aria-controls="drop-agnovi">More</a>
                         </div>
                     </div>
-
-                    <div class="card bg-dark text-white justify-content-center mx-3">
-                        <img class="card-img" src="/images/iawah-dark.png" alt="Card image">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Iawah Christian Ministries</h5>
-                            <p class="card-text">Summer Camp Supervisor, 2017-2019</p>
-                            <div id="drop-iawah" class="collapse">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Created training, established mentorship and provided support for a team of
-                                            about 60 young adult staff.</li>
-                                        <li>Provided direct supervision over the junior camp program, often working
-                                            one-on-one with special need campers and guiding the cabin leading staff
-                                        </li>
-                                    </ul>
+                    <div class="col-lg">
+                        <div class="card col-lg bg-dark text-white my-3">
+                            <img class="card-img" src="/images/iawah-dark.png" alt="Card image">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Iawah Christian Ministries</h5>
+                                <p class="card-text">Summer Camp Supervisor, 2017-2019</p>
+                                <div id="drop-iawah" class="collapse">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Created training, established mentorship and provided support for a team
+                                                of
+                                                about 60 young adult staff.</li>
+                                            <li>Provided direct supervision over the junior camp program, often working
+                                                one-on-one with special need campers and guiding the cabin leading staff
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
+                                <a href="#drop-iawah" class="btn btn-outline-light card-link" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="drop-iawah">More</a>
                             </div>
-                            <a href="#drop-iawah" class="btn btn-outline-light card-link" data-bs-toggle="collapse"
-                                role="button" aria-expanded="false" aria-controls="drop-iawah">More</a>
                         </div>
                     </div>
 
@@ -184,8 +187,8 @@
                 <p class="resume-tagline">Projects</p>
                 <div class="my-5">
                     <div class="row my-5">
-                        <div class="col-lg-4">
-                            <div class="card bg-dark text-white">
+                        <div class="col-lg">
+                            <div class="card bg-dark text-white my-3">
                                 <img class="card-img" src="/images/backpack-dark.png">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">Backpack</h5>
@@ -209,8 +212,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="card bg-dark text-white">
+                        <div class="col-lg">
+                            <div class="card bg-dark text-white my-3">
                                 <img class="card-img" src="/images/feifX-dark.png">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">FiefX</h5>
@@ -234,8 +237,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="card bg-dark text-white">
+                        <div class="col-lg">
+                            <div class="card bg-dark text-white my-3">
                                 <img class="card-img" src="/images/portfolio-dark.png">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">this.portfolio</h5>
@@ -275,8 +278,8 @@
                 </div>
                 <div class="my-5">
                     <div class="row my-5">
-                        <div class="col-lg-4">
-                            <div class="card bg-dark text-white">
+                        <div class="col-lg">
+                            <div class="card bg-dark text-white my-3">
                                 <img class="card-img" src="/images/java-dark.png" alt="Card image">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">Java</h5>
@@ -300,8 +303,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="card bg-dark text-white">
+                        <div class="col-lg">
+                            <div class="card bg-dark text-white my-3">
                                 <img class="card-img" src="/images/python-dark.png" alt="Card image">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">Python</h5>
@@ -329,8 +332,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="card bg-dark text-white">
+                        <div class="col-lg">
+                            <div class="card bg-dark text-white my-3">
                                 <img class="card-img" src="/images/html-dark.png" alt="Card image">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">HTML/CSS/JS</h5>
@@ -462,14 +465,35 @@
             }, 50)
         }
 
+        var dropped = false;
         var nav = document.querySelector('nav');
         window.addEventListener('scroll', function () {
             if (window.pageYOffset > 300) {
-                nav.classList.add('navbar-darker', 'shadow');
+                nav.classList.add('navbar-darker');
             } else {
-                nav.classList.remove('navbar-darker', 'shadow');
+                if (!dropped) {
+                    nav.classList.remove('navbar-darker');
+                }
             }
         });
+
+        var ready = true;
+        function handleNavBackground() {
+
+            if (ready) {
+                if (window.pageYOffset <= 300) {
+                    nav.classList.toggle('navbar-darker');
+                }
+                dropped = !dropped;
+
+                //Debounce
+                ready = false;
+                setTimeout(function () {
+                    ready = true;
+                }, 200);
+            }
+
+        }
 
         $('a').click(function () {
             $('html, body').animate({
