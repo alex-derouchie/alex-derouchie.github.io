@@ -64,7 +64,7 @@
     <div class="container-fluid w-100 h-auto m-0 p-0">
         <div id="Home" class="intro">
             <h1 class="centered display-1">
-                Hi, I'm Alex.
+                <span id="intro-hi">Hi. </span><span id="intro-name">I'm Alex.</span>
             </h1>
         </div>
     </div>
@@ -144,7 +144,13 @@
                             <p class="card-text">Summer Camp Supervisor, 2017-2019</p>
                             <div id="drop-iawah" class="collapse">
                                 <div class="card-body">
-                                    <p>Test Text</p>
+                                    <ul>
+                                        <li>Created training, established mentorship and provided support for a team of
+                                            about 60 young adult staff.</li>
+                                        <li>Provided direct supervision over the junior camp program, often working
+                                            one-on-one with special need campers and guiding the cabin leading staff
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <a href="#drop-iawah" class="btn btn-outline-light card-link" data-bs-toggle="collapse"
@@ -180,7 +186,7 @@
                     <div class="row my-5">
                         <div class="col-lg-4">
                             <div class="card bg-dark text-white">
-                                <img class="card-img" src="">
+                                <img class="card-img" src="/images/backpack-dark.png">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">Backpack</h5>
                                     <p class="card-text">Powerful, easy to use online inventory management system.</p>
@@ -216,7 +222,9 @@
                                     </ul>
                                     <div id="drop-fiefx" class="collapse">
                                         <div class="card-body">
-                                            <p>Test Text
+                                            <p>The React Native mobile app uses Redux state management and a real-time
+                                                Firebase system for data retention, with many APIs (Google Maps, Victory
+                                                Charts, etc.) to enhance User Experience.
                                             </p>
                                         </div>
                                     </div>
@@ -228,10 +236,11 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="card bg-dark text-white">
-                                <img class="card-img" src="">
+                                <img class="card-img" src="/images/portfolio-dark.png">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">this.portfolio</h5>
-                                    <p class="card-text">An excercise in design and experience.
+                                    <p class="card-text">Smooth, responsive and detailed personal website built from the
+                                        ground up.
                                     </p>
                                     <ul class="text-left">
                                         <li>HTML</li>
@@ -240,7 +249,9 @@
                                     </ul>
                                     <div id="drop-portfolio" class="collapse">
                                         <div class="card-body">
-                                            <p>Test Text
+                                            <p>This portfolio was created primarily using HTML and CSS, relying heavily
+                                                on Twitter’s Bootstrap library for styling and design. The animations
+                                                and dynamic aspects of the website are written in Javascript.
                                             </p>
                                         </div>
                                     </div>
@@ -269,12 +280,18 @@
                                 <img class="card-img" src="/images/java-dark.png" alt="Card image">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">Java</h5>
-                                    <p class="card-text">Simple splash text describing basic Java skills in a concise
-                                        manner.</p>
+                                    <p class="card-text">My main working language. Confident with all aspects.</p>
                                     <div id="drop-java" class="collapse">
                                         <div class="card-body">
-                                            <p>Test Text
-                                            </p>
+                                            <ul>
+                                                <li>I work in Java daily in my current position at Agnovi Corporation. I
+                                                    use everything from the Eclipse SWT user interface library, to
+                                                    Java’s own SQL library, to in-house charting frameworks and more.
+                                                </li>
+                                                <li>Additionally, I’ve worked on several personal projects and
+                                                    coursework in Java, including my first mobile application,
+                                                    a cooking assistant application, in Android Studio using Java.</li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <a href="#drop-java" class="btn btn-outline-light card-link"
@@ -288,13 +305,22 @@
                                 <img class="card-img" src="/images/python-dark.png" alt="Card image">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">Python</h5>
-                                    <p class="card-text">Thinking of maybe making these cards pop out with more info? to
-                                        keep it
-                                        clean?</p>
+                                    <p class="card-text">From Django to PyGame, I've done a bit of it all.</p>
                                     <div id="drop-python" class="collapse">
                                         <div class="card-body">
-                                            <p>Test Text
-                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Python is one of the most simple and accessible general-purpose
+                                                    languages out there. Most of my education in software engineering
+                                                    was done using Python.
+                                                </li>
+                                                <li>
+                                                    One of my major projects, Backpack, was written in Python using the
+                                                    Django framework, which is a full-stack solution for building web
+                                                    applications using Python, from UI components down to Database
+                                                    design using their built-in ORM.
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <a href="#drop-python" class="btn btn-outline-light card-link"
@@ -308,12 +334,22 @@
                                 <img class="card-img" src="/images/html-dark.png" alt="Card image">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">HTML/CSS/JS</h5>
-                                    <p class="card-text">Maybe a splash here with more data hovering over the button?
+                                    <p class="card-text">Do you like what you see?
                                     </p>
                                     <div id="drop-web" class="collapse">
                                         <div class="card-body">
-                                            <p>Test Text
-                                            </p>
+                                            <ul>
+                                                <li>
+                                                    All of my web projects (e.g. backpack, this portfolio) are
+                                                    structured and formatted using HTML, with CSS for styling and layout
+                                                    and JavaScript being used for more dynamic aspects.
+                                                </li>
+                                                <li>
+                                                    I am very well experienced using Twitter's Bootstrap library to
+                                                    provide styling and layout for many of my projects, vastly
+                                                    simplifying the CSS aspects required.
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <a href="#drop-web" class="btn btn-outline-light card-link"
@@ -399,6 +435,33 @@
 
 
     <script>
+
+        window.onload = function () {
+            writeIntroText();
+        }
+
+        function writeIntroText() {
+            setTimeout(function () {
+                fading("intro-hi")
+            }, 250);
+            setTimeout(function () {
+                fading("intro-name")
+            }, 1200);
+            ;
+        }
+
+        function fading(elem) {
+            var increment = 0.045;
+            var opacity = 0;
+            var instance = window.setInterval(function () {
+                document.getElementById(elem).style.opacity = opacity
+                opacity = opacity + increment;
+                if (opacity > 1) {
+                    window.clearInterval(instance);
+                }
+            }, 50)
+        }
+
         var nav = document.querySelector('nav');
         window.addEventListener('scroll', function () {
             if (window.pageYOffset > 300) {
