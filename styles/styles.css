@@ -137,7 +137,6 @@ a{
   font-size: 1.25rem;
 }
 
-/* This needs some work. */
 .section-header {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -167,17 +166,15 @@ a{
   text-align: left;
 }
 
+.cs-img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+}
 
-
-
-
-
-
-
-
-
-
-
+.cs-card {
+  align-items: center;
+}
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
@@ -189,12 +186,3 @@ a{
 @media (max-width: 576px) {
   
 }
-
-
-
-
-
-
-
-
-
